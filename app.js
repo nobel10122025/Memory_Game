@@ -65,6 +65,7 @@ document.addEventListener('DOMContentLoaded',() => {
             var card = document.createElement('img')
             card.setAttribute('src','images/blank.jpg')
             card.setAttribute('data-id',i)
+            card.setAttribute('class','image')
             card.addEventListener('click' ,flipCard)
             grid.appendChild(card)
         }
@@ -93,8 +94,8 @@ document.addEventListener('DOMContentLoaded',() => {
         resultDisplay.textContent=cardsWon.length
         //console.log(resultDisplay.textContent)
         if(cardsWon.length===cardArray.length/2){
-            resultDisplay.textContent="Congrats! You have found all"
-            alert("Congrats! Have a nice day...")
+            resultDisplay.textContent="Congrats! You have found all."
+            //alert("Congrats! Have a nice day...")
         }
 
     }
